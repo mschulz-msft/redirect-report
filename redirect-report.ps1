@@ -26,7 +26,7 @@ $outputFile = "export.csv"
 
 $counter = 0
 while(($file1[$counter] -ne $null) -and ($file2[$counter] -ne $null)){
-    $Line = $locale + "," + $file1[$counter] + "," + $version + "," + $family + "," + $file2[$counter]
+    $Line = $locale + "," + $file1[$counter] + "," + $version + "," + $family + "," + $file2[$counter] -replace ('.md')
     $line >> $outputFile
     $counter++
 }
