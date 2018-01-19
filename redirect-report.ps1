@@ -2,6 +2,7 @@
 
 param (
     [string]$sourcefile,
+    [string]$outfile,
     [string]$sourceurl = "https://msdn.microsoft.com/",
     [string]$targeturl = "https://msdn.microsoft.com/"
     )
@@ -18,7 +19,6 @@ $file2 = $target -replace (' ')
 $locale = "en-us"
 $family = "Azure"
 $version = "100"
-$outputFile = "export.csv"
  
 
 'Locale,Source URL,Product Version,Product Family,Target URL' > $outputFile
@@ -27,7 +27,7 @@ $outputFile = "export.csv"
 $counter = 0
 while(($file1[$counter] -ne $null) -and ($file2[$counter] -ne $null)){
     $Line = $locale + "," + $file1[$counter] + "," + $version + "," + $family + "," + $file2[$counter] -replace ('.md')
-    $line >> $outputFile
+    $line >> $outfile
     $counter++
 }
 
