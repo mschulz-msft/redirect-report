@@ -1,4 +1,4 @@
-Redirect report generator 
+## Redirect report generator 
 
 Usage: redirect-report.ps1 -sourceurl <sourceurlhead> -targeturl <targeturlhead>
 
