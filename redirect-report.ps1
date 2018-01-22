@@ -9,7 +9,7 @@ This script converts a tab delimited file from the migration report to the corre
 Usage: redirect-report.ps1 [-sourcefile] <String> [-outfile] <String> [-sourceurl] <String> [-targeturl] <String> [-prodfam] <String> [-version] <String> [-locale]
     <String> [<CommonParameters>]
 
-Example: redirect-report.ps1 -sourcefile report.txt -outfile urlredirecttemplate.csv -sourceurl https://msdn.microsoft.com -targeturl https://docs.microsoft.com/en-us/powershell -prodfam Azure -version 100 -locale en-us
+Example: redirect-report.ps1 -sourcefile report.txt -outfile urlredirecttemplate.csv -sourceurl https://msdn.microsoft.com/ -targeturl https://docs.microsoft.com/en-us/powershell/ -prodfam Azure -version 100 -locale en-us
 
 .PARAMETER sourcefile
 
