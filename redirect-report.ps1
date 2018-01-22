@@ -53,7 +53,7 @@ $target=get-content  $sourcefile | select -skip 1 | %{"$( echo $targeturl $_.Spl
 $file2 = $target -replace (' ')
 
 
-'Locale,Source URL,Product Version,Product Family,Target URL' > $outputFile
+'Locale,Source URL,Product Version,Product Family,Target URL' > $outfile
 
 
 $counter = 0
