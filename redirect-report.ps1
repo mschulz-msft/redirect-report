@@ -4,7 +4,7 @@
 
 .SYNOPSIS 
 
-This script convertes a tab delimited file from the migration report to the correct input template for URL redirection.
+This script converts a tab delimited file from the migration report to the correct input template for URL redirection.
 
 Usage: redirect-report.ps1 [-sourcefile] <String> [-outfile] <String> [-sourceurl] <String> [-targeturl] <String> [-prodfam] <String> [-version] <String> [-locale]
     <String> [<CommonParameters>]
